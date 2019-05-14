@@ -1,0 +1,5 @@
+1. create a container for saving data
+docker run --name anki_data anki_img echo "anki data"
+
+2. run
+docker run --rm -ti --volumes-from anki_data -p 27701:27701 anki_img
